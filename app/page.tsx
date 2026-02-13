@@ -16,7 +16,7 @@ export default function Home() {
               About Me
             </a>
             <a href="#contact" className="btn btn-secondary">
-              Get in Touch
+              Get in Touch With Me
             </a>
           </div>
         </section>

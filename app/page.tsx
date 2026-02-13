@@ -1,58 +1,56 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
-      <div className="container mx-auto px-4 py-16">
-        {/* Hero Section */}
-        <div className="max-w-4xl mx-auto text-center mb-16">
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-            Aris Anastasatos
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-600 mb-8">
-            Technical Architect & Product Manager
+    <main className="page-shell">
+      <div className="page-backdrop" aria-hidden="true" />
+      <div className="mx-auto max-w-5xl px-6 py-14 md:py-20">
+        <section className="hero">
+          <p className="eyebrow">Personal Profile</p>
+          <h1 className="hero-title">Aris Anastasatos</h1>
+          <p className="hero-subtitle">Technical Architect & Product Manager</p>
+          <p className="hero-description">
+            I build reliable technical foundations and align them with product strategy to
+            deliver measurable outcomes.
           </p>
-          <div className="flex gap-4 justify-center flex-wrap">
-            <a 
-              href="#about" 
-              className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
-            >
+          <div className="flex flex-wrap justify-center gap-3">
+            <a href="#about" className="btn btn-primary">
               About Me
             </a>
-            <a 
-              href="#contact" 
-              className="px-8 py-3 border-2 border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition"
-            >
+            <a href="#contact" className="btn btn-secondary">
               Get in Touch
             </a>
           </div>
-        </div>
+        </section>
 
-        {/* About Section */}
-        <div id="about" className="max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">About</h2>
-          <div className="bg-white rounded-lg shadow-lg p-8">
-            <p className="text-gray-700 leading-relaxed mb-4">
-              I'm a Technical Architect and Product Manager with a strong background in backend development, 
-              particularly in Java. I bridge the gap between technical implementation and product strategy.
+        <section id="about" className="panel mb-8 md:mb-10">
+          <h2 className="section-title">About</h2>
+          <div className="space-y-4 text-sm leading-7 text-slate-700 md:text-base">
+            <p>
+              I&apos;m a Technical Architect and Product Manager with a strong background in backend
+              development, particularly in Java. I bridge technical implementation and product
+              strategy to keep teams aligned and execution focused.
             </p>
-            <p className="text-gray-700 leading-relaxed">
-              Currently exploring modern web technologies and building personal projects to expand my skill set.
+            <p>
+              I&apos;m currently exploring modern web technologies and building personal projects to
+              broaden my product and engineering toolkit.
             </p>
           </div>
-        </div>
+        </section>
 
-        {/* Contact Section */}
-        <div id="contact" className="max-w-2xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Contact</h2>
-          <div className="bg-white rounded-lg shadow-lg p-8">
-            <p className="text-gray-700 mb-4">
-              Feel free to reach out for collaborations or just to say hello!
-            </p>
-            <p className="text-blue-600 font-semibold">
-              hello@arisan.gr
-            </p>
+        <section id="contact" className="panel">
+          <h2 className="section-title">Contact</h2>
+          <p className="mb-4 text-sm leading-7 text-slate-700 md:text-base">
+            Feel free to reach out for collaborations or to discuss architecture, product strategy,
+            and technical leadership opportunities.
+          </p>
+          <a className="contact-link" href="mailto:hello@arisan.gr">
+            hello@arisan.gr
+          </a>
+          <p className="mt-4 text-sm text-slate-500">Based in Greece, working internationally.</p>
+        </section>
+        <footer className="mt-8 text-center text-xs tracking-wide text-slate-500 md:mt-10">
+          © {new Date().getFullYear()} Aris Anastasatos
+        </footer>
           </div>
-        </div>
-      </div>
     </main>
   );
 }

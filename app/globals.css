@@ -1,8 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f2f4f8;
+  --foreground: #102035;
+  --surface: #ffffff;
+  --surface-border: #d8e1ec;
+  --title: #0e1c2f;
+  --muted: #5a6b82;
+  --primary: #1f4e8c;
+  --primary-strong: #163d73;
+  --ring: rgba(31, 78, 140, 0.25);
 }
 
 @theme inline {
@@ -12,15 +19,141 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), "Segoe UI", sans-serif;
+}
+
+.page-shell {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.page-backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 10% 15%, rgba(31, 78, 140, 0.15), transparent 28%),
+    radial-gradient(circle at 92% 85%, rgba(16, 32, 53, 0.11), transparent 27%),
+    linear-gradient(165deg, #f8fafc 0%, #edf2f8 55%, #e5edf7 100%);
+}
+
+.hero {
+  margin-bottom: 2rem;
+  border: 1px solid var(--surface-border);
+  border-radius: 1.25rem;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.95), rgba(246, 250, 255, 0.96));
+  box-shadow: 0 24px 50px -36px rgba(16, 32, 53, 0.45);
+}
+
+.eyebrow {
+  margin-bottom: 0.75rem;
+  color: var(--primary);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+
+.hero-title {
+  color: var(--title);
+  font-size: clamp(2.1rem, 5vw, 3.75rem);
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.hero-subtitle {
+  margin-top: 0.5rem;
+  color: #30435c;
+  font-size: clamp(1.1rem, 2.8vw, 1.5rem);
+  font-weight: 500;
+}
+
+.hero-description {
+  margin: 1rem auto 1.75rem;
+  max-width: 38rem;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.panel {
+  border: 1px solid var(--surface-border);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  background: var(--surface);
+  box-shadow: 0 20px 36px -36px rgba(16, 32, 53, 0.5);
+}
+
+.section-title {
+  margin-bottom: 0.9rem;
+  color: var(--title);
+  font-size: 1.55rem;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 10.25rem;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1.2rem;
+  font-size: 0.94rem;
+  font-weight: 600;
+  transition: all 160ms ease;
+}
+
+.btn:focus-visible,
+.contact-link:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px var(--ring);
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background: var(--primary-strong);
+}
+
+.btn-secondary {
+  border: 1px solid #b7c6d8;
+  color: var(--primary);
+  background: rgba(255, 255, 255, 0.76);
+}
+
+.btn-secondary:hover {
+  border-color: #93a9c0;
+  background: #ffffff;
+}
+
+.contact-link {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    margin-bottom: 2.5rem;
+    padding: 3.2rem 2.25rem;
+  }
+
+  .panel {
+    padding: 2rem;
+  }
 }

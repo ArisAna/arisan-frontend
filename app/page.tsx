@@ -1,7 +1,11 @@
+import Navigation from "@/components/Navigation";
+import ContactForm from "@/components/ContactForm";
+
 export default function Home() {
   return (
     <main className="page-shell">
       <div className="page-backdrop" aria-hidden="true" />
+      <Navigation />
       <div className="mx-auto max-w-5xl px-6 py-14 md:py-20">
         <section className="hero">
           <p className="eyebrow">Personal Profile</p>
@@ -36,16 +40,8 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="contact" className="panel">
-          <h2 className="section-title">Contact</h2>
-          <p className="mb-4 text-sm leading-7 text-slate-700 md:text-base">
-            Feel free to reach out for collaborations or to discuss architecture, product strategy,
-            and technical leadership opportunities.
-          </p>
-          <a className="contact-link" href="mailto:hello@arisan.gr">
-            hello@arisan.gr
-          </a>
-          <p className="mt-4 text-sm text-slate-500">Based in Greece, working internationally.</p>
+        <section id="contact">
+          <ContactForm />
         </section>
         <footer className="mt-8 text-center text-xs tracking-wide text-slate-500 md:mt-10">
           © {new Date().getFullYear()} Aris Anastasatos

@@ -10,10 +10,10 @@ export default function Home() {
         <section className="hero">
           <p className="eyebrow">Personal Profile</p>
           <h1 className="hero-title">Aris Anastasatos</h1>
-          <p className="hero-subtitle">Technical Architect & Product Manager</p>
+          <p className="hero-subtitle">Technical Architect & Product Manager 🚀</p>
           <p className="hero-description">
             I build reliable technical foundations and align them with product strategy to
-            deliver measurable outcomes.
+            deliver measurable outcomes. Auto-deployed with GitHub Actions!
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             <a href="#about" className="btn btn-primary">

@@ -36,5 +36,5 @@ jobs:
           port: 21
           security: loose
           local-dir: ./out/
-          server-dir: /httpdocs/
+          server-dir: /arisangr/httpdocs/
           timeout: 600000

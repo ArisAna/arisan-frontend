@@ -16,6 +16,6 @@ npm run build
 
 # Copy built files to httpdocs
 echo "📂 Deploying to httpdocs..."
-cp -r out/* /var/www/vhosts/arisan.gr/arisangr/httpdocs/
+cp -r out/* httpdocs/
 
 echo "✅ Deployment complete!"

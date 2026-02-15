@@ -13,9 +13,9 @@ export PATH="/opt/plesk/node/24/bin:$PATH"
 echo "📦 Installing dependencies..."
 npm install
 
-# Build the Next.js app (Webpack - Turbopack needs too many server resources)
+# Build the Next.js app
 echo "🔨 Building Next.js app..."
-npx next build --no-turbopack
+npm run build
 
 # Copy built files to httpdocs
 echo "📂 Deploying to httpdocs..."

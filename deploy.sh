@@ -6,6 +6,9 @@ set -e  # Exit on error
 
 echo "🚀 Starting deployment..."
 
+# Add Node.js to PATH (Plesk installs Node.js here)
+export PATH="/opt/plesk/node/24/bin:$PATH"
+
 # Install dependencies
 echo "📦 Installing dependencies..."
 npm install

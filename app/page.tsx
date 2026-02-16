@@ -20,7 +20,7 @@ export default function Home() {
               About Me
             </a>
             <a href="#contact" className="btn btn-secondary">
-              Get in Touch With Me
+              Get in Touch
             </a>
           </div>
         </section>

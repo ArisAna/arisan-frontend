@@ -8,7 +8,7 @@ export default function Home() {
       <Navigation />
       <div className="mx-auto max-w-5xl px-6 py-14 md:py-20">
         <section className="hero">
-          <p className="eyebrow">Professional Portfolio</p>
+          <p className="eyebrow">Welcome to my Portfolio</p>
           <h1 className="hero-title">Aris Anastasatos</h1>
           <p className="hero-subtitle">Technical Architect & Product Manager</p>
           <p className="hero-description">

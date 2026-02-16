@@ -5,7 +5,6 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  bundler: 'webpack',
 };
 
 export default nextConfig;

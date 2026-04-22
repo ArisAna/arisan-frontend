@@ -275,7 +275,7 @@ export default function TasosBirthday() {
     const kids = rsvpKidsRef.current?.value ?? '0';
     const message = rsvpMessageRef.current?.value.trim() ?? '';
     const subject = `RSVP Πάρτι Τάσου - ${name}`;
-    const body = `Ονομα: ${name}\nΣυμμετοχή: ${attendance}\nΑτομα: ${guests}\nΠαιδιά: ${kids}\nΜήνυμα: ${message || '-'}`;
+    const body = `Όνομα: ${name}\nΣυμμετοχή: ${attendance}\nΆτομα: ${guests}\nΠαιδιά: ${kids}\nΜήνυμα: ${message || '-'}`;
     window.open(`mailto:anastasatos.a@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`);
     setRsvpSubmitted(true);
   }
@@ -356,7 +356,7 @@ export default function TasosBirthday() {
             <div className="countdown-label">Αντίστροφη μέτρηση μέχρι τα γενέθλια</div>
             <div className="countdown">
               <div className="cd-unit"><div className="cd-number">{countdown.days}</div><div className="cd-label">Μέρες</div></div>
-              <div className="cd-unit"><div className="cd-number">{countdown.hours}</div><div className="cd-label">Ωρες</div></div>
+              <div className="cd-unit"><div className="cd-number">{countdown.hours}</div><div className="cd-label">Ώρες</div></div>
               <div className="cd-unit"><div className="cd-number">{countdown.mins}</div><div className="cd-label">Λεπτά</div></div>
               <div className="cd-unit"><div className="cd-number">{countdown.secs}</div><div className="cd-label">Δευτ.</div></div>
             </div>
@@ -548,7 +548,7 @@ export default function TasosBirthday() {
           <div className="fact-card" data-animate="" data-delay="100">
             <div className="fact-icon">⭐</div>
             <div className="fact-value">{ageHours}</div>
-            <div className="fact-label">Ωρες περιπέτειας</div>
+            <div className="fact-label">Ώρες περιπέτειας</div>
           </div>
           <div className="fact-card" data-animate="" data-delay="200">
             <div className="fact-icon">🌙</div>
@@ -558,7 +558,7 @@ export default function TasosBirthday() {
           <div className="fact-card" data-animate="" data-delay="300">
             <div className="fact-icon">🌎</div>
             <div className="fact-value">5</div>
-            <div className="fact-label">Γύροι γύρω από τον Ηλιο</div>
+            <div className="fact-label">Γύροι γύρω από τον Ήλιο</div>
           </div>
           <div className="fact-card" data-animate="" data-delay="400">
             <div className="fact-icon">💫</div>
@@ -577,7 +577,7 @@ export default function TasosBirthday() {
           <div className="solar-grid">
             <div className="solar-fact" data-animate="">
               <div className="solar-fact-icon">☀️</div>
-              <div className="solar-fact-text">Ο Ηλιος είναι τόσο μεγάλος που <strong>χωράει μέσα του η Γη 1.3 εκατομμύρια φορές!</strong></div>
+              <div className="solar-fact-text">Ο Ήλιος είναι τόσο μεγάλος που <strong>χωράει μέσα του η Γη 1.3 εκατομμύρια φορές!</strong></div>
             </div>
             <div className="solar-fact" data-animate="" data-delay="100">
               <div className="solar-fact-icon">🪐</div>
@@ -585,7 +585,7 @@ export default function TasosBirthday() {
             </div>
             <div className="solar-fact" data-animate="" data-delay="200">
               <div className="solar-fact-icon">🔴</div>
-              <div className="solar-fact-text">Ενα φεγγάρι του Αρη (Φόβος) ανατέλλει <strong>3 φορές τη μέρα!</strong></div>
+              <div className="solar-fact-text">Ένα φεγγάρι του Άρη (Φόβος) ανατέλλει <strong>3 φορές τη μέρα!</strong></div>
             </div>
             <div className="solar-fact" data-animate="" data-delay="300">
               <div className="solar-fact-icon">💎</div>
@@ -606,7 +606,7 @@ export default function TasosBirthday() {
       {/* ════ INVITATION ════ */}
       <section id="invitation">
         <div className="section-label" data-animate="">🎉 Πρόσκληση</div>
-        <h2 className="section-title" data-animate="">Ελα στο Πάρτι!</h2>
+        <h2 className="section-title" data-animate="">Έλα στο Πάρτι!</h2>
         <p className="section-sub" data-animate="">Η αποστολή σου, αν επιλέξεις να την αποδεχτείς, είναι να έρθεις και να γιορτάσουμε μαζί!</p>
         <div className="section-divider" data-animate=""/>
 
@@ -634,11 +634,11 @@ export default function TasosBirthday() {
               <div className="invite-row-icon">👨‍👩‍👦</div>
               <div>
                 <div className="invite-row-label">Από</div>
-                <div className="invite-row-value">Αρης Αναστασάτος & Μαρίκα Σακελλαροπούλου (+ Μάρκος)</div>
+                <div className="invite-row-value">Άρης Αναστασάτος & Μαρίκα Σακελλαροπούλου (+ Μάρκος)</div>
               </div>
             </div>
           </div>
-          <p className="dress-note">🌟 Dress code: Ο,τι σε κάνει να νιώθεις αστροναύτης!</p>
+          <p className="dress-note">🌟 Dress code: Ό,τι σε κάνει να νιώθεις αστροναύτης!</p>
         </div>
       </section>
 
@@ -653,7 +653,7 @@ export default function TasosBirthday() {
           <div id="qrcode"/>
           <div className="qr-label">Πολιτικά Ευβοίας — Google Maps</div>
           <a className="qr-link" href="https://maps.app.goo.gl/W9oRhZB4yxXdExGw9" target="_blank" rel="noopener noreferrer">
-            🗺️ Ανοιξε στο χάρτη
+            🗺️ Άνοιξε στο χάρτη
           </a>
         </div>
       </section>
@@ -700,7 +700,7 @@ export default function TasosBirthday() {
                   <option value="">Επίλεξε...</option>
                   <option value="yes">✅ Ναι, θα έρθω!</option>
                   <option value="no">❌ Δεν μπορώ να έρθω</option>
-                  <option value="maybe">🤔 Ισως, θα επιβεβαιώσω</option>
+                  <option value="maybe">🤔 Ίσως, θα επιβεβαιώσω</option>
                 </select>
               </div>
               <div className="form-group">
@@ -729,7 +729,7 @@ export default function TasosBirthday() {
               </div>
               <div className="form-group">
                 <label className="form-label" htmlFor="rsvp-message">Μήνυμα για τον Τάσο (προαιρετικό)</label>
-                <textarea className="form-textarea" id="rsvp-message" ref={rsvpMessageRef} placeholder="Ενα ευχάριστο μήνυμα..."/>
+                <textarea className="form-textarea" id="rsvp-message" ref={rsvpMessageRef} placeholder="Ένα ευχάριστο μήνυμα..."/>
               </div>
               <button className="form-submit" onClick={submitRSVP}>
                 🚀 Αποστολή!

@@ -30,7 +30,7 @@
 .birthday-root h1,
 .birthday-root h2,
 .birthday-root h3 {
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Fredoka', cursive;
 }
 
 /* ── CANVAS STARFIELD ── */
@@ -235,7 +235,7 @@
   backdrop-filter: blur(10px);
 }
 .cd-number {
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Fredoka', cursive;
   font-size: 36px;
   line-height: 1;
   background: linear-gradient(135deg, #ffffff, #99aaff);
@@ -388,7 +388,7 @@
 }
 .fact-icon { font-size: 36px; margin-bottom: 12px; }
 .fact-value {
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Fredoka', cursive;
   font-size: 36px;
   background: linear-gradient(135deg, #ffffff, #99aaff);
   -webkit-background-clip: text;
@@ -413,7 +413,7 @@
   font-size: 22px;
   color: var(--light-purple);
   margin-bottom: 24px;
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Fredoka', cursive;
 }
 .solar-grid {
   display: grid;
@@ -681,7 +681,7 @@
   border: none;
   border-radius: 100px;
   color: white;
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Fredoka', cursive;
   font-size: 20px;
   letter-spacing: 1px;
   cursor: pointer;
@@ -702,7 +702,7 @@
   font-size: 32px;
   color: var(--light-pink);
   margin-bottom: 12px;
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Fredoka', cursive;
 }
 .rsvp-success p { color: var(--text-dim); line-height: 1.7; }
 

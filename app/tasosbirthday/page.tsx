@@ -345,7 +345,7 @@ export default function TasosBirthday() {
         </div>
 
         <div className="hero-content">
-          <div className="hero-badge">🚀 Αποστολή: Γενέθλια!</div>
+          <div className="hero-badge">🚀 Αποστολη: Γενεθλια!</div>
           <h1 className="hero-title">
             <span className="name">Τάσος</span>
             <span className="number">5</span>
@@ -353,18 +353,18 @@ export default function TasosBirthday() {
           <p className="hero-subtitle">Χρόνια πολλά, αστροναύτη μας! ⭐</p>
 
           <div className="countdown-wrap">
-            <div className="countdown-label">Αντίστροφη μέτρηση μέχρι τα γενέθλια</div>
+            <div className="countdown-label">Αντιστροφη μετρηση μεχρι τα γενεθλια</div>
             <div className="countdown">
-              <div className="cd-unit"><div className="cd-number">{countdown.days}</div><div className="cd-label">Μέρες</div></div>
-              <div className="cd-unit"><div className="cd-number">{countdown.hours}</div><div className="cd-label">Ώρες</div></div>
-              <div className="cd-unit"><div className="cd-number">{countdown.mins}</div><div className="cd-label">Λεπτά</div></div>
+              <div className="cd-unit"><div className="cd-number">{countdown.days}</div><div className="cd-label">Μερες</div></div>
+              <div className="cd-unit"><div className="cd-number">{countdown.hours}</div><div className="cd-label">Ωρες</div></div>
+              <div className="cd-unit"><div className="cd-number">{countdown.mins}</div><div className="cd-label">Λεπτα</div></div>
               <div className="cd-unit"><div className="cd-number">{countdown.secs}</div><div className="cd-label">Δευτ.</div></div>
             </div>
           </div>
         </div>
 
         <div className="scroll-hint">
-          <span>Κάνε scroll</span>
+          <span>Κανε scroll</span>
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
             <path d="M12 5v14M5 12l7 7 7-7"/>
           </svg>
@@ -373,7 +373,7 @@ export default function TasosBirthday() {
 
       {/* ════ MEMORIES ════ */}
       <section id="memories">
-        <div className="section-label" data-animate="">📽️ Αναμνήσεις</div>
+        <div className="section-label" data-animate="">📽️ Αναμνησεις</div>
         <h2 className="section-title" data-animate="">5 Χρόνια Ταξίδι</h2>
         <p className="section-sub" data-animate="">Από την πρώτη στιγμή που ήρθες στον κόσμο μας, το σύμπαν έγινε πιο φωτεινό</p>
         <div className="section-divider" data-animate=""/>
@@ -534,7 +534,7 @@ export default function TasosBirthday() {
 
       {/* ════ FUN FACTS ════ */}
       <section id="facts">
-        <div className="section-label" data-animate="">📊 Στοιχεία Αποστολής</div>
+        <div className="section-label" data-animate="">📊 Στοιχεια Αποστολης</div>
         <h2 className="section-title" data-animate="">Τα Νούμερα του Τάσου</h2>
         <p className="section-sub" data-animate="">Επίσημα δεδομένα του Αστροναύτη Αναστάσιου</p>
         <div className="section-divider" data-animate=""/>
@@ -543,32 +543,32 @@ export default function TasosBirthday() {
           <div className="fact-card" data-animate="" data-delay="0">
             <div className="fact-icon">🚀</div>
             <div className="fact-value">{ageDays}</div>
-            <div className="fact-label">Ημέρες στο σύμπαν</div>
+            <div className="fact-label">Ημερες στο συμπαν</div>
           </div>
           <div className="fact-card" data-animate="" data-delay="100">
             <div className="fact-icon">⭐</div>
             <div className="fact-value">{ageHours}</div>
-            <div className="fact-label">Ώρες περιπέτειας</div>
+            <div className="fact-label">Ωρες περιπετειας</div>
           </div>
           <div className="fact-card" data-animate="" data-delay="200">
             <div className="fact-icon">🌙</div>
             <div className="fact-value">60</div>
-            <div className="fact-label">Πανσέληνοι που είδε</div>
+            <div className="fact-label">Πανσεληνοι που ειδε</div>
           </div>
           <div className="fact-card" data-animate="" data-delay="300">
             <div className="fact-icon">🌎</div>
             <div className="fact-value">5</div>
-            <div className="fact-label">Γύροι γύρω από τον Ήλιο</div>
+            <div className="fact-label">Γυροι γυρω απο τον Ηλιο</div>
           </div>
           <div className="fact-card" data-animate="" data-delay="400">
             <div className="fact-icon">💫</div>
             <div className="fact-value">∞</div>
-            <div className="fact-label">Αγάπη από τους γονείς</div>
+            <div className="fact-label">Αγαπη απο τους γονεις</div>
           </div>
           <div className="fact-card" data-animate="" data-delay="500">
             <div className="fact-icon">🛸</div>
             <div className="fact-value">1</div>
-            <div className="fact-label">Μοναδικός στο σύμπαν</div>
+            <div className="fact-label">Μοναδικος στο συμπαν</div>
           </div>
         </div>
 
@@ -605,7 +605,7 @@ export default function TasosBirthday() {
 
       {/* ════ INVITATION ════ */}
       <section id="invitation">
-        <div className="section-label" data-animate="">🎉 Πρόσκληση</div>
+        <div className="section-label" data-animate="">🎉 Προσκληση</div>
         <h2 className="section-title" data-animate="">Έλα στο Πάρτι!</h2>
         <p className="section-sub" data-animate="">Η αποστολή σου, αν επιλέξεις να την αποδεχτείς, είναι να έρθεις και να γιορτάσουμε μαζί!</p>
         <div className="section-divider" data-animate=""/>
@@ -613,27 +613,27 @@ export default function TasosBirthday() {
         <div className="invite-card" data-animate="">
           <div className="invite-decoration tl">🚀</div>
           <div className="invite-decoration br">🚀</div>
-          <div className="invite-eyebrow">✨ Επίσημη Πρόσκληση Διαστημικής Αποστολής</div>
+          <div className="invite-eyebrow">✨ Επισημη Προσκληση Διαστημικης Αποστολης</div>
           <h3 className="invite-heading">Ο Τάσος γιορτάζει<br/>τα 5α του Γενέθλια!</h3>
           <div className="invite-details">
             <div className="invite-row">
               <div className="invite-row-icon">📅</div>
               <div>
-                <div className="invite-row-label">Ημερομηνία</div>
+                <div className="invite-row-label">Ημερομηνια</div>
                 <div className="invite-row-value">Σάββατο, 30 Μαΐου 2026</div>
               </div>
             </div>
             <div className="invite-row">
               <div className="invite-row-icon">📍</div>
               <div>
-                <div className="invite-row-label">Τοποθεσία</div>
+                <div className="invite-row-label">Τοποθεσια</div>
                 <div className="invite-row-value">Πολιτικά Ευβοίας</div>
               </div>
             </div>
             <div className="invite-row">
               <div className="invite-row-icon">👨‍👩‍👦</div>
               <div>
-                <div className="invite-row-label">Από</div>
+                <div className="invite-row-label">Απο</div>
                 <div className="invite-row-value">Άρης Αναστασάτος & Μαρίκα Σακελλαροπούλου (+ Μάρκος)</div>
               </div>
             </div>
@@ -644,7 +644,7 @@ export default function TasosBirthday() {
 
       {/* ════ LOCATION / QR ════ */}
       <section id="location">
-        <div className="section-label" data-animate="">📍 Πώς να έρθεις</div>
+        <div className="section-label" data-animate="">📍 Πως να ερθεις</div>
         <h2 className="section-title" data-animate="">Συντεταγμένες Αποστολής</h2>
         <p className="section-sub" data-animate="">Σκάναρε τον κώδικα ή πάτα το link για χάρτη</p>
         <div className="section-divider" data-animate=""/>
@@ -660,7 +660,7 @@ export default function TasosBirthday() {
 
       {/* ════ MESSAGE ════ */}
       <section id="message">
-        <div className="section-label" data-animate="">💌 Μήνυμα</div>
+        <div className="section-label" data-animate="">💌 Μηνυμα</div>
         <h2 className="section-title" data-animate="">Από τους Γονείς</h2>
         <div className="section-divider" data-animate=""/>
 
@@ -691,11 +691,11 @@ export default function TasosBirthday() {
           {!rsvpSubmitted ? (
             <>
               <div className="form-group">
-                <label className="form-label" htmlFor="rsvp-name">Ονοματεπώνυμο</label>
+                <label className="form-label" htmlFor="rsvp-name">Ονοματεπωνυμο</label>
                 <input className="form-input" type="text" id="rsvp-name" ref={rsvpNameRef} placeholder="π.χ. Γιώργης Παπαδόπουλος"/>
               </div>
               <div className="form-group">
-                <label className="form-label" htmlFor="rsvp-attendance">Συμμετοχή</label>
+                <label className="form-label" htmlFor="rsvp-attendance">Συμμετοχη</label>
                 <select className="form-select" id="rsvp-attendance" ref={rsvpAttendanceRef}>
                   <option value="">Επίλεξε...</option>
                   <option value="yes">✅ Ναι, θα έρθω!</option>
@@ -706,7 +706,7 @@ export default function TasosBirthday() {
               <div className="form-group">
                 <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'12px'}}>
                   <div>
-                    <label className="form-label" htmlFor="rsvp-guests">Αριθμός Ενηλίκων</label>
+                    <label className="form-label" htmlFor="rsvp-guests">Αριθμος Ενηλικων</label>
                     <select className="form-select" id="rsvp-guests" ref={rsvpGuestsRef}>
                       <option value="0">0</option>
                       <option value="1">1</option>
@@ -716,7 +716,7 @@ export default function TasosBirthday() {
                     </select>
                   </div>
                   <div>
-                    <label className="form-label" htmlFor="rsvp-kids">Αριθμός Παιδιών</label>
+                    <label className="form-label" htmlFor="rsvp-kids">Αριθμος Παιδιων</label>
                     <select className="form-select" id="rsvp-kids" ref={rsvpKidsRef}>
                       <option value="0">0</option>
                       <option value="1">1</option>
@@ -728,7 +728,7 @@ export default function TasosBirthday() {
                 </div>
               </div>
               <div className="form-group">
-                <label className="form-label" htmlFor="rsvp-message">Μήνυμα για τον Τάσο (προαιρετικό)</label>
+                <label className="form-label" htmlFor="rsvp-message">Μηνυμα για τον Τασο (προαιρετικο)</label>
                 <textarea className="form-textarea" id="rsvp-message" ref={rsvpMessageRef} placeholder="Ένα ευχάριστο μήνυμα..."/>
               </div>
               <button className="form-submit" onClick={submitRSVP}>

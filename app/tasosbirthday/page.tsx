@@ -746,7 +746,7 @@ export default function TasosBirthday() {
 
       {/* FOOTER */}
       <footer>
-        <p>Φτιαγμένο με <span>💜</span> για τον <span>Τάσος</span> — 29 Μαΐου 2026</p>
+        <p>Φτιαγμένο με <span>💜</span> για τον <span>Τάσο</span> — 29 Μαΐου 2026</p>
       </footer>
     </div>
   );

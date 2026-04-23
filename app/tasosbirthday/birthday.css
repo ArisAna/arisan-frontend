@@ -869,4 +869,6 @@
   .rocket { width: 50px; }
   .invite-card, .rsvp-form, .message-card { padding: 32px 22px; }
   .planet-bg { width: 450px; height: 450px; }
+  .facts-grid { grid-template-columns: 1fr 1fr; }
+  .solar-grid { grid-template-columns: 1fr; }
 }

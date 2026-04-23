@@ -596,19 +596,21 @@
   font-family: 'Playfair Display', serif;
 }
 .message-text {
-  font-size: clamp(19px, 2.5vw, 23px);
-  line-height: 1.9;
+  font-size: clamp(18px, 2.4vw, 22px);
+  line-height: 2;
   color: var(--text);
-  font-family: 'Dancing Script', cursive;
-  font-weight: 600;
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-weight: 400;
   margin-bottom: 28px;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.2px;
 }
 .message-sig {
-  font-size: 22px;
+  font-size: 21px;
   color: var(--light-pink);
-  font-family: 'Dancing Script', cursive;
-  font-weight: 700;
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-weight: 600;
 }
 .hearts {
   display: flex; gap: 8px; justify-content: center; margin-top: 20px;
@@ -644,6 +646,12 @@
 .rsvp-form.visible { opacity: 1; transform: translateY(0); }
 
 .form-group { margin-bottom: 20px; text-align: left; }
+.form-row-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.form-row-2col > div { min-width: 0; }
 .form-label {
   display: block;
   font-size: 12px;

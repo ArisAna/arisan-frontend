@@ -10,7 +10,7 @@ export default function BirthdayLayout({ children }: { children: React.ReactNode
     <>
       {/* eslint-disable-next-line @next/next/no-page-custom-font */}
       <link
-        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;600;700;800;900&family=Dancing+Script:wght@600;700&family=Playfair+Display:ital@0;1&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;600;700;800;900&family=Lora:ital,wght@1,400;1,600;1,700&family=Dancing+Script:wght@600;700&family=Playfair+Display:ital@0;1&display=swap"
         rel="stylesheet"
       />
       <style>{`body { background: #0e0010; }`}</style>

@@ -16,6 +16,7 @@ export default function TasosBirthday() {
   const rsvpGuestsRef = useRef<HTMLSelectElement>(null);
   const rsvpKidsRef = useRef<HTMLSelectElement>(null);
   const rsvpMessageRef = useRef<HTMLTextAreaElement>(null);
+  const rsvpEmailRef = useRef<HTMLInputElement>(null);
 
   const [countdown, setCountdown] = useState({ days: '--', hours: '--', mins: '--', secs: '--' });
   const [ageDays, setAgeDays] = useState('1826');
@@ -27,6 +28,7 @@ export default function TasosBirthday() {
   const [curtainState, setCurtainState] = useState<CurtainState>('closed');
   const [videoVisible, setVideoVisible] = useState(false);
   const [rsvpSubmitted, setRsvpSubmitted] = useState(false);
+  const [rsvpSubmitting, setRsvpSubmitting] = useState(false);
 
   // ── STARFIELD ──
   useEffect(() => {
@@ -264,7 +266,7 @@ export default function TasosBirthday() {
   }
 
   // ── RSVP ──
-  function submitRSVP() {
+  async function submitRSVP() {
     const name = rsvpNameRef.current?.value.trim() ?? '';
     const attendance = rsvpAttendanceRef.current?.value ?? '';
     if (!name || !attendance) {
@@ -274,10 +276,29 @@ export default function TasosBirthday() {
     const guests = rsvpGuestsRef.current?.value ?? '0';
     const kids = rsvpKidsRef.current?.value ?? '0';
     const message = rsvpMessageRef.current?.value.trim() ?? '';
-    const subject = `RSVP Πάρτι Τάσου - ${name}`;
-    const body = `Όνομα: ${name}\nΣυμμετοχή: ${attendance}\nΆτομα: ${guests}\nΠαιδιά: ${kids}\nΜήνυμα: ${message || '-'}`;
-    window.open(`mailto:anastasatos.a@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`);
-    setRsvpSubmitted(true);
+    const email = rsvpEmailRef.current?.value.trim() ?? '';
+
+    setRsvpSubmitting(true);
+    try {
+      const res = await fetch('https://api.arisan.gr/api/birthday/rsvp', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name,
+          attendance,
+          guests: parseInt(guests) || 0,
+          kids: parseInt(kids) || 0,
+          message: message || null,
+          email: email || null,
+        }),
+      });
+      if (!res.ok) throw new Error('Server error');
+      setRsvpSubmitted(true);
+    } catch {
+      alert('Κάτι πήγε στραβά. Δοκίμασε ξανά σε λίγο!');
+    } finally {
+      setRsvpSubmitting(false);
+    }
   }
 
   const curtainLeftClass = `curtain curtain-left${curtainState === 'opening' || curtainState === 'open' ? ' open' : curtainState === 'closing' ? ' close' : ''}`;
@@ -704,7 +725,7 @@ export default function TasosBirthday() {
                 </select>
               </div>
               <div className="form-group">
-                <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'12px'}}>
+                <div className="form-row-2col">
                   <div>
                     <label className="form-label" htmlFor="rsvp-guests">Αριθμος Ενηλικων</label>
                     <select className="form-select" id="rsvp-guests" ref={rsvpGuestsRef}>
@@ -731,8 +752,12 @@ export default function TasosBirthday() {
                 <label className="form-label" htmlFor="rsvp-message">Μηνυμα για τον Τασο (προαιρετικο)</label>
                 <textarea className="form-textarea" id="rsvp-message" ref={rsvpMessageRef} placeholder="Ένα ευχάριστο μήνυμα..."/>
               </div>
-              <button className="form-submit" onClick={submitRSVP}>
-                🚀 Αποστολή!
+              <div className="form-group">
+                <label className="form-label" htmlFor="rsvp-email">Email για επιβεβαιωση (προαιρετικο)</label>
+                <input className="form-input" type="email" id="rsvp-email" ref={rsvpEmailRef} placeholder="π.χ. giorgis@email.com"/>
+              </div>
+              <button className="form-submit" onClick={submitRSVP} disabled={rsvpSubmitting}>
+                {rsvpSubmitting ? '⏳ Στέλνουμε...' : '🚀 Αποστολή!'}
               </button>
             </>
           ) : (
